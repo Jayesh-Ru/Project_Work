@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Morocco is one of the best places to travel. it's a safe country that offers the best experience of traveling.">
+    <meta name="keywords" content="Morocco,travel,chefchaouen,marrakech,sahara">
+    <meta name="author" content="Mehdi Aoussiad">
+    <title>Discover India</title>
+    <link rel="icon" href="images/flag.jpg">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/about.css">
+    <link rel="stylesheet" href="Css/discover.css">
+    <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/e391ce7786.js" crossorigin="anonymous"></script>
+    <script src="JS/app.js" defer></script>
+    <script src="JS/animation.js" defer></script>
+</head>
+
+<body style="background-image: url('images/main1.jpg');">
+        <!--Header section.-->
+        <header class="header">
+          <h1 id="logo">India</h1>
+            <nav class="navbar">
+                <a href="#" class="nav-link" onclick="removeNav()">Home</a>
+                <a href="#about" class="nav-link" onclick="removeNav()">About</a>
+                <div class="dropdown">
+                <a href="#discover" id="drop"  class="nav-link" onclick="removeNav()" onmouseout="dropdown2()" onmouseover="dropdown1()">Places <i class="fas fa-chevron-down"></i></a>
+                   <div class="dropdown-content" onmouseout="dropdown2()" onmouseover="dropdown1()">
+                       <a style="border-bottom:1px solid #ccc" href="places.html#chechaouen" class="drop-btn">Rajasthan</a>
+                       <a style="border-bottom:1px solid #ccc" href="places.html#marrakech" class="drop-btn1">Agra</a>
+                       <a style="border-bottom:1px solid #ccc" href="places.html#sahara" class="drop-btn2">Kerala</a>
+                       <a style="border-bottom:1px solid #ccc" href="places.html#sahara" class="drop-btn3">Ooty</a>
+                       <a style="border-bottom:1px solid #ccc" href="places.html#sahara" class="drop-btn4">Goa</a>
+                       <a style="border-bottom:1px solid #ccc" href="places.html#sahara" class="drop-btn5">Ellora & Ajanta Caves</a>
+                       <a style="border-bottom:1px solid #ccc" href="places.html#sahara" class="drop-btn6">Ladakh</a>
+                       <a style="border-bottom:1px solid #ccc" href="places.html#sahara" class="drop-btn7">Varanasi</a>
+                       <a style="border-bottom:1px solid #ccc" href="places.html#sahara" class="drop-btn8">Sikkim</a>  
+                   </div>
+                </div>
+                <a href="#counters" class="active" style="background-color: crimson;" onclick="removeNav()">Discover</a>
+            </nav>
+            <div class="toggle">
+                <button><i class="fas fa-bars"></i></button>
+            </div>
+        </header>
+
+       <!--Home section-->
+        <section id="home">
+            <h2 id="title">Discover <span>India</span></h2>
+            <p>Choosing <span>INDIA</span> means a good traveling choice for you. you will 
+                spend less money, and get the best traveling experience by visiting beauthiful places of the country.
+            </p>
+            <a href="#counters" id="home-btn">Discover</a>
+        </section>
+        <!--cursor animation-->
+        <a href="#about"><div class="animated-cursor">
+            <div class="circle"></div>
+        </div></a>
+        <!--About section-->
+        <div id="about">
+            <h2 id="aboutitle">About India</h2>
+            <span id="line"></span>
+            <!--1st-->
+            <div class="column">
+
+                <div class="text">
+                <h2>What is India ?</h2>
+                <p>
+                  One of the oldest civilisations in the world, India is a mosaic of multicultural experiences. With a rich 
+                  heritage and myriad attractions, the country is among the most popular tourist destinations in the world.
+                  It covers an area of 32, 87,263 sq. km, extending from the snow-covered Himalayan heights to the tropical 
+                  rain forests of the south. As the 7th largest country in the world, India stands apart from the rest of
+                  Asia, marked off as it is by mountains and the sea, which give the country a distinct geographical entity. 
+                </p>
+                </div>
+
+                <img src="images/flag.jpg" alt="Indian-flag">
+            </div>
+             <!--2nd-->
+            <div class="column">
+
+                <div class="text">
+                    <h2>What India Offers for Tourists ?</h2>
+                    <p>
+                      Fringed by the Great Himalayas in the north, it stretches southwards and at the Tropic of Cancer, 
+                      tapers off into the Indian Ocean between the Bay of Bengal on the east and the Arabian Sea on the west. 
+                      As you travel the expanse of the country, you are greeted by diverse nuances of cuisines, faiths, arts, 
+                      crafts, music, nature, lands, tribes, history and adventure sports. India has a mesmeric conflation of 
+                      the old and the new. As the bustling old bazaars rub shoulders with swanky shopping malls, and majestic 
+                      monuments accompany luxurious heritage hotels, the quintessential traveller can get the best of both worlds. 
+                      Head to the mountains, enjoy a beach retreat or cruise through the golden Thar, India has options galore 
+                      for all. </p>
+                    </div>
+    
+                    <img src="images/jaipur.jpg" alt="place">
+            </div>
+        </div>
+        
+        <!--Counter Section-->
+        <section id="counters">
+            <div class="container">
+            <div class="box">
+                <i class="fas fa-users"></i>
+                <div class="counter" data-target="1393400000">0</div>
+                <h2>Population</h2>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-city"></i>
+                <div class="counter" data-target="343">0</div>
+                <h2>Cities</h2>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-th"></i>
+                <div class="counter" data-target="3287263">0</div><span>Km²</span>
+                <h2>Space</h2>
+            </div>
+        </div>
+        </section>
+      
+        
+        <!--Discover section-->
+        
+        <div id="discover">
+            <h2 id="discovertitle">Best Places</h2>
+         
+        <div class="carousel-container">
+            <div class="mySlides animate">
+              <img src="images/rajasthan.jpg" alt="slide" />
+              <div class="number">1 / 9</div>
+              <div class="text">Rajasthan</div>
+            </div>
+          
+            <div class="mySlides animate">
+              <img src="images/kerela.jpg" alt="slide" />
+              <div class="number">2 / 9</div>
+              <div class="text">Kerela</div>
+            </div>
+          
+            <div class="mySlides animate">
+              <img src="images/goa.jpg" alt="slide" />
+              <div class="number">3 /9</div>
+              <div class="text">Goa</div>
+            </div>
+          
+            <div class="mySlides animate">
+              <img src="images/ladakh.jpg" alt="slide" />
+              <div class="number">4/9</div>
+              <div class="text">Ladakh</div>
+            </div>
+          
+            <div class="mySlides animate">
+              <img src="images/agra.jpg" alt="slide" />
+              <div class="number">5/9</div>
+              <div class="text">Agra</div>
+            </div>
+            <div class="mySlides animate">
+                <img src="images/a&e_caves.jpg" alt="slide" />
+                <div class="number">6/9</div>
+                <div class="text">Ajanta and Ellora Caves</div>
+              </div>
+              <div class="mySlides animate">
+                <img src="images/varanasi.jpg" alt="slide" />
+                <div class="number">7/9</div>
+                <div class="text">Varanasi</div>
+              </div>
+              <div class="mySlides animate">
+                <img src="images/sikkim.jpg" alt="slide" />
+                <div class="number"> 8/9</div>
+                <div class="text">Sikkim</div>
+              </div>
+              <div class="mySlides animate">
+                <img src="images/ooty.jpg" alt="slide" />
+                <div class="number"> 9/9</div>
+                <div class="text">Ooty</div>
+              </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="prevSlide()">&#10094;</a>
+            <a class="next" onclick="nextSlide()">&#10095;</a>
+          
+            <!-- The dots/circles -->
+            <div class="dots-container">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+              <span class="dot" onclick="currentSlide(6)"></span>
+              <span class="dot" onclick="currentSlide(7)"></span>
+              <span class="dot" onclick="currentSlide(8)"></span>
+              <span class="dot" onclick="currentSlide(9)"></span>
+            </div>
+          </div>
+        </div>
+           
+        
+<!--Footer Section-->
+        <footer>
+            <a href="#"><h1 style=" background: -webkit-linear-gradient(180deg, rgba(10,137,1,1) 10%,rgba(255,255,255,1) 28%, rgba(255,154,47,1)  75%);
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              font-weight: bold; "
+              >India</h1></a>
+            <p> Made with ❤️ by<a style="color: crimson; font-weight: 700;" href="https://github.com/Jayesh-Ru" target="_blank"> Jayesh Khairnar</a>.</p>
+            <div class="sm">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </footer>
+
+        <a href="#" id="cursor"><i class="fas fa-arrow-circle-up"></i></a>
+</body>
+</html>
+
