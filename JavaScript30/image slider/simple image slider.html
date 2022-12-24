@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e391ce7786.js" crossorigin="anonymous"></script>
+
+    <style>
+
+.slider{
+    position: relative;
+     max-width: 40rem; 
+    height: 26.625rem; 
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slide{ 
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 26.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s;
+}
+.slide > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+button{
+    background: none;
+    border: none;
+}
+button .fas{
+    color: crimson;
+}
+.btn-slide{
+    position:absolute;
+    top:50%;
+    z-index: 10;
+    height: 5.5rem;
+    width: 5.5rem;
+    cursor: pointer;
+}
+
+.prev{
+    left:3rem;
+    transform: translate(-50%, -50%);
+}
+.next{
+    right: 3rem;
+    transform: translate(50%, -50%); 
+}
+.dots-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.dot{
+    width: 25px;
+    height: 5px;
+    margin: 15px 5px;
+    border-radius: .5rem;
+    background: rgba(39,39,39, .5);
+    cursor: pointer;
+}
+.dot.active{
+background:#272727;
+}
+    </style>
+</head>
+<body>
+    <div class="slider">
+      <div class="slide">
+            <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80" alt="Photo1"/>
+        </div>
+      <div class="slide">
+            <img src="photos/tj-holowaychuk-1EYMue_AwDw-unsplash.jpg" alt="Photo3"/>
+        </div> 
+      <div class="slide">
+            <img src="photos/nathan-anderson-_tBeFVZPlPY-unsplash.jpg" alt="Photo2"/>
+        </div>
+      <div class="slide">
+            <img src="photos/lucas-calloch-P-yzuyWFEIk-unsplash.jpg" alt="Photo3"/>
+        </div> 
+
+        <button class="btn-slide prev"><i class="fas fa-3x fa-chevron-circle-left"></i></button>
+        <button class="btn-slide next"><i class="fas fa-3x fa-chevron-circle-right"></i></button>
+      
+    </div>
+    <div class="dots-container">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+      <span class="dot" data-slide="3"></span>
+    </div>
+    
+</body>
+</html>

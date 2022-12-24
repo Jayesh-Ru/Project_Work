@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: beige;   
+}
+.screen{
+    display: flex;
+    margin: 10px 0;
+    background: transparent;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    width: 380px;
+    background: rgb(20, 20, 20);
+    padding: 10px;
+}
+h1{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin: 7px 0;
+}
+.output{
+    background: rgb(77, 76, 76);
+    width: 60%;
+    height: 50px;
+    overflow: auto;
+    margin: 0 20px;
+    padding: 10px 7px;
+    font-size: 17px;
+    z-index: 10;
+    color: white;
+    border: none;
+    outline: none;
+}
+.screen button{
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+input, label{
+    margin: 15px 20px;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+#passlength{
+    text-align: center;
+}
+#generate{
+    cursor: pointer;
+    margin: 10px 15px;
+    height: 45px;
+    font-size: 17px;
+    font-weight: bold;
+    background: orangered;
+    border: none;
+    outline: none;
+    color: white;
+}

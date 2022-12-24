@@ -1,0 +1,62 @@
+body {
+  background: #70945F;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #ff9;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 94px;
+}
+
+h1 span {
+  font-size: 42px;
+}
+
+.game_table {
+  text-align: center;
+  color: #F9F4ED;
+}
+
+button {
+  width: 15%;
+  font-size: 32px;
+  background: #F9F4ED;
+  margin-bottom: 30px;
+  border: 1px #F9F4ED solid;
+  color: #3D444E
+}
+
+.card {
+  background: #F9FAEB;
+  height: 300px;
+  line-height: 300px;
+  width: 225px;
+  border-radius: 5%;
+  margin: 50px auto;
+  font-size: 56px;
+  color: black;
+}
+
+.card.back {
+  background: url(card_back.jpg);
+  background-size: cover;
+}
+
+.pOne, .pTwo, .status {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.status {
+  width: 300px;
+  font-size: 26px;
+}
+
+.status, .info {
+  width: 300px;
+  font-size: 26px;
+}
+
+
