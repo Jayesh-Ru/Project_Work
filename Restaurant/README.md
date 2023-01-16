@@ -1,1 +1,1 @@
-<video src='images/2.mp4' width=180 ></video>
+<video src='https://github.com/Jayesh-Ru/Project_Work/blob/master/Restaurant/images/2.mp4' width=180 ></video>
